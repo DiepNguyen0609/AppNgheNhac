@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">LofiBeat</string>
+
+    <string name="menu_home">Trang chủ</string>
+    <string name="menu_category">Thể loại</string>
+    <string name="menu_artist">Nghệ sĩ</string>
+
+    <string name="menu_all_songs">Tất cả bài hát</string>
+    <string name="menu_popular_songs">Những bài hát được yêu thích</string>
+    <string name="menu_favorite_songs">Bài hát yêu thích</string>
+
+    <string name="menu_feedback">Phản hồi</string>
+    <string name="menu_contact">Liên hệ</string>
+
+    <string name="menu_account">Tài khoản</string>
+    <string name="menu_song">Bài hát</string>
+
+    <string name="menu_change_password">Đổi mật khẩu</string>
+    <string name="menu_sign_out">Đăng xuất</string>
+
+    <string name="label_facebook">Facebook</string>
+    <string name="label_call"> Điện thoại</string>
+    <string name="label_gmail">Gmail</string>
+    <string name="label_skype">Skype</string>
+    <string name="label_youtube">Youtube</string>
+    <string name="label_zalo">Zalo</string>
+
+    <string name="feedback_name">Họ và tên (*)</string>
+    <string name="feedback_email">Email</string>
+    <string name="feedback_phone">Số điện thoại</string>
+    <string name="feedback_comment">Bình luận (*)</string>
+    <string name="send_feedback">Gửi phản hồi</string>
+
+    <string name="play_all">Phát tất cả</string>
+    <string name="view_all">Xem tất cả</string>
+    <string name="music_player">Trình phát nhạc</string>
+    <string name="views">Lượt xem</string>
+    <string name="label_start_time">00:00</string>
+    <string name="label_search">Tìm kiếm</string>
+    <string name="title_download">Tải xuống</string>
+    <string name="message_download">Tải bài hát…</string>
+    <string name="label_prioritized">Ưu tiên</string>
+
+    <string name="option_download">Tải bài hát</string>
+    <string name="option_priority">Ưu tiên</string>
+    <string name="option_add_playlist">Thêm vào danh sách phát</string>
+    <string name="option_remove_playlist">Remove from playlist</string>
+    <string name="option_view_artist">Xóa khỏi danh sách phát</string>
+    <string name="option_view_category">Xem danh mục</string>
+
+    // action
+    <string name="action_ok">Đồng ý</string>
+    <string name="action_cancel">Hủy</string>
+    <string name="action_add">Thêm</string>
+    <string name="action_edit">Cập nhật</string>
+
+    // Validate
+    <string name="name_require">Vui lòng nhập tên của bạn</string>
+    <string name="comment_require">Vui lòng nhập bình luận của bạn</string>
+
+    <!-- Gợi ý -->
+    <string name="hint_search_name">Tên bài hát…</string>
+    <string name="hint_search_category">Tên thể loại…</string>
+    <string name="hint_search_artist">Tên nghệ sĩ…</string>
+
+    // Label
+    <string name="label_artist">Nghệ sĩ:</string>
+    <string name="label_listen">nghe</string>
+    <string name="label_listens">lượt nghe</string>
+
+    <!-- Thông báo -->
+    <string name="msg_please_waiting">Vui lòng đợi…</string>
+    <string name="msg_send_feedback_success">Gửi phản hồi thành công!</string>
+    <string name="msg_exit_app">Bạn có chắc chắn muốn thoát không?</string>
+    <string name="msg_get_date_error">Lỗi hệ thống, vui lòng thử lại sau</string>
+
+    <!-- Module người dùng -->
+    <string name="hint_email">Email…</string>
+    <string name="hint_password">Mật khẩu…</string>
+    <string name="hint_password_old">Mật khẩu cũ…</string>
+    <string name="hint_password_new">Mật khẩu mới…</string>
+    <string name="hint_password_confirm">Xác nhận mật khẩu mới…</string>
+
+    <string name="sign_up">Đăng ký</string>
+    <string name="have_account">Bạn đã có tài khoản?</string>
+    <string name="have_not_account">Bạn chưa có tài khoản?</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="sign_out">Đăng xuất</string>
+    <string name="reset_password">Đặt lại mật khẩu</string>
+    <string name="admin">Quản trị viên</string>
+    <string name="user">Người dùng</string>
+
+    <string name="label_name">Tên(*)</string>
+    <string name="label_image">Hình ảnh(*)</string>
+    <string name="label_add_category">Thêm danh mục</string>
+    <string name="label_update_category">Cập nhật danh mục</string>
+    <string name="label_add_artist">Thêm nghệ sĩ</string>
+    <string name="label_update_artist">Cập nhật nghệ sĩ</string>
+    <string name="label_add_song">Thêm bài hát</string>
+    <string name="label_update_song">Cập nhật bài hát</string>
+
+    <string name="song_category">Danh mục(*)</string>
+    <string name="song_artist">Nghệ sĩ(*)</string>
+    <string name="song_link_url">Liên kết URL (.mp3)(*)</string>
+    <string name="song_featured">Nổi bật</string>
+    <string name="label_featured">Nổi bật:</string>
+    <string name="label_category">Danh mục:</string>
+
+    <string name="msg_name_require">Vui lòng nhập tên</string>
+    <string name="msg_image_require">Vui lòng nhập hình ảnh</string>
+    <string name="msg_url_require">Vui lòng nhập URL (.mp3)</string>
+    <string name="msg_edit_category_success">Cập nhật danh mục thành công</string>
+    <string name="msg_add_category_success">Thêm danh mục thành công</string>
+    <string name="msg_edit_artist_success">Cập nhật nghệ sĩ thành công</string>
+    <string name="msg_add_artist_success">Thêm nghệ sĩ thành công</string>
+    <string name="msg_edit_song_success">Cập nhật bài hát thành công</string>
+    <string name="msg_add_song_success">Thêm bài hát thành công</string>
+
+    <string name="msg_email_require">Vui lòng nhập email</string>
+    <string name="msg_password_require">Vui lòng nhập mật khẩu</string>
+    <string name="msg_email_invalid">Email của bạn không hợp lệ</string>
+
+    <string name="msg_old_password_require">Vui lòng nhập mật khẩu cũ</string>
+    <string name="msg_new_password_require">Vui lòng nhập mật khẩu mới</string>
+    <string name="msg_confirm_password_require">Vui lòng nhập xác nhận mật khẩu mới</string>
+    <string name="msg_old_password_invalid">Mật khẩu cũ không chính xác</string>
+    <string name="msg_confirm_password_invalid">Mật khẩu xác nhận không khớp</string>
+    <string name="msg_new_password_invalid">Mật khẩu mới trùng với mật khẩu cũ</string>
+
+    <string name="msg_change_password_successfully">Đổi mật khẩu thành công</string>
+    <string name="msg_reset_password_successfully">Đặt lại mật khẩu thành công, vui lòng kiểm tra email của bạn</string>
+
+    <string name="msg_sign_up_error">Đăng ký thất bại, vui lòng thử lại</string>
+    <string name="msg_sign_in_error">Đăng nhập thất bại, vui lòng thử lại</string>
+    <string name="msg_permission_denied">Từ chối quyền truy cập</string>
+    <string name="msg_add_song_playlist_success">Thêm bài hát vào danh sách phát thành công</string>
+    <string name="msg_song_exists_in_playlist">Bài hát đã có trong danh sách phát</string>
+    <string name="msg_song_playing">Bài hát đang phát</string>
+    <string name="msg_setting_priority_successfully">Thiết lập ưu tiên thành công</string>
+    <string name="msg_confirm_delete">Bạn có chắc chắn muốn xóa mục này không?</string>
+    <string name="msg_delete_title">Xác nhận xóa</string>
+    <string name="msg_cannot_delete_song">Không thể xóa bài hát đang phát khỏi danh sách phát</string>
+    <string name="msg_delete_song_from_playlist_success">Xóa bài hát khỏi danh sách phát thành công</string>
+    <string name="msg_email_invalid_admin">Email của quản trị viên cần có định dạng …@admin.com</string>
+    <string name="msg_email_invalid_user">Sai định dạng email cho người dùng</string>
+    <string name="msg_delete_category_successfully">Xóa danh mục thành công</string>
+    <string name="msg_delete_artist_successfully">Xóa nghệ sĩ thành công</string>
+    <string name="msg_delete_song_successfully">Xóa bài hát thành công</string>
+</resources>
