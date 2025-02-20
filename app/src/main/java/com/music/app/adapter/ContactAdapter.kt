@@ -6,10 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.music.app.R
 import com.music.app.adapter.ContactAdapter.ContactViewHolder
-import com.music.app.constant.GlobalFunction.onClickOpenFacebook
 import com.music.app.constant.GlobalFunction.onClickOpenGmail
-import com.music.app.constant.GlobalFunction.onClickOpenSkype
-import com.music.app.constant.GlobalFunction.onClickOpenYoutubeChannel
 import com.music.app.databinding.ItemContactBinding
 import com.music.app.model.Contact
 
@@ -41,11 +38,8 @@ class ContactAdapter(
         }
         holder.mItemContactBinding.layoutItem.setOnClickListener {
             when (contact.id) {
-                Contact.FACEBOOK -> onClickOpenFacebook(context!!)
                 Contact.HOTLINE -> iCallPhone.onClickCallPhone()
                 Contact.GMAIL -> onClickOpenGmail(context!!)
-                Contact.SKYPE -> onClickOpenSkype(context!!)
-                Contact.YOUTUBE -> onClickOpenYoutubeChannel(context!!)
             }
         }
     }

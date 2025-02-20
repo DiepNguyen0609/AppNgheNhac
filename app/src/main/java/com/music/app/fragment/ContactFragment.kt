@@ -30,11 +30,6 @@ class ContactFragment : Fragment() {
     private fun initUi() {
         binding?.tvAboutUsTitle?.text = AboutUsConfig.ABOUT_US_TITLE
         binding?.tvAboutUsContent?.text = AboutUsConfig.ABOUT_US_CONTENT
-        mContactAdapter = ContactAdapter(activity, loadListContact(), object : ContactAdapter.ICallPhone {
-            override fun onClickCallPhone() {
-                activity?.let { GlobalFunction.callPhoneNumber(it) }
-            }
-        })
         val layoutManager = GridLayoutManager(activity, 3)
         binding?.rcvData?.isNestedScrollingEnabled = false
         binding?.rcvData?.isFocusable = false
@@ -46,11 +41,7 @@ class ContactFragment : Fragment() {
     private fun loadListContact(): List<Contact> {
         val contactArrayList: MutableList<Contact> = ArrayList()
         contactArrayList.add(Contact(Contact.FACEBOOK, R.drawable.ic_facebook))
-        contactArrayList.add(Contact(Contact.HOTLINE, R.drawable.ic_hotline))
         contactArrayList.add(Contact(Contact.GMAIL, R.drawable.ic_gmail))
-        contactArrayList.add(Contact(Contact.SKYPE, R.drawable.ic_skype))
-        contactArrayList.add(Contact(Contact.YOUTUBE, R.drawable.ic_youtube))
-        contactArrayList.add(Contact(Contact.ZALO, R.drawable.ic_zalo))
         return contactArrayList
     }
 

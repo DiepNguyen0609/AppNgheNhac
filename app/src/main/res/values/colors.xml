@@ -9,7 +9,7 @@
     <color name="black_overlay">#667C7474</color>
     <color name="nen">#3C3831</color>
     <color name="colorPrimary">#07112a</color>
-    <color name="colorPrimaryDark">#07112a</color>
+    <color name="colorPrimaryDark">#ff835f</color>
 
     <color name="colorAccent">#ff835f</color>
     <color name="texthint">#95746B</color>
@@ -21,13 +21,13 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="yellow">#FFC107</color>
+    <color name="yellow">#FB1900</color>
     <color name="transparent">#00000000</color>
     <color name="tran_parent">#66000000</color>
     <color name="background_bottom">#66E6DBDB</color>
-    <color name="black">#FF000000</color>
+    <color name="black">#F8000000</color>
     <color name="xam">#4A4545</color>
-    <color name="red">#F80A0A</color>
+    <color name="red">#FFC107</color>
     <color name="white">#FFFFFFFF</color>
     <color name="xam2">#393838</color>
     <color name="blue">#2196F3</color>

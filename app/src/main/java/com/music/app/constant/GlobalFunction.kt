@@ -72,69 +72,6 @@ object GlobalFunction {
         context.startActivity(Intent.createChooser(emailIntent, "Send Email"))
     }
 
-    @JvmStatic
-    fun onClickOpenSkype(context: Context) {
-        try {
-            val skypeUri = Uri.parse("skype:" + AboutUsConfig.SKYPE_ID + "?chat")
-            context.packageManager.getPackageInfo("com.skype.raider", 0)
-            val skypeIntent = Intent(Intent.ACTION_VIEW, skypeUri)
-            skypeIntent.component = ComponentName("com.skype.raider", "com.skype.raider.Main")
-            context.startActivity(skypeIntent)
-        } catch (e: Exception) {
-            openSkypeWebView(context)
-        }
-    }
-
-    private fun openSkypeWebView(context: Context) {
-        try {
-            context.startActivity(Intent(Intent.ACTION_VIEW,
-                    Uri.parse("skype:" + AboutUsConfig.SKYPE_ID + "?chat")))
-        } catch (exception: Exception) {
-            val skypePackageName = "com.skype.raider"
-            try {
-                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$skypePackageName")))
-            } catch (e: ActivityNotFoundException) {
-                context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=$skypePackageName")))
-            }
-        }
-    }
-
-    @JvmStatic
-    fun onClickOpenFacebook(context: Context) {
-        var intent: Intent
-        try {
-            var urlFacebook: String = AboutUsConfig.PAGE_FACEBOOK
-            val packageManager = context.packageManager
-            val versionCode = packageManager.getPackageInfo("com.facebook.katana", 0).versionCode
-            if (versionCode >= 3002850) { //newer versions of fb app
-                urlFacebook = "fb://facewebmodal/f?href=" + AboutUsConfig.LINK_FACEBOOK
-            }
-            intent = Intent(Intent.ACTION_VIEW, Uri.parse(urlFacebook))
-        } catch (e: Exception) {
-            intent = Intent(Intent.ACTION_VIEW, Uri.parse(AboutUsConfig.LINK_FACEBOOK))
-        }
-        context.startActivity(intent)
-    }
-
-    @JvmStatic
-    fun onClickOpenYoutubeChannel(context: Context) {
-        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(AboutUsConfig.LINK_YOUTUBE)))
-    }
-
-
-    fun callPhoneNumber(activity: Activity) {
-        try {
-            if (ActivityCompat.checkSelfPermission(activity, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(activity, arrayOf(Manifest.permission.CALL_PHONE), 101)
-                return
-            }
-            val callIntent = Intent(Intent.ACTION_CALL)
-            callIntent.data = Uri.parse("tel:" + AboutUsConfig.PHONE_NUMBER)
-            activity.startActivity(callIntent)
-        } catch (ex: Exception) {
-            ex.printStackTrace()
-        }
-    }
 
     fun showToastMessage(context: Context?, message: String?) {
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
